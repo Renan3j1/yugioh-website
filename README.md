@@ -23,5 +23,5 @@ Agradeço pela oportunidade.
 
 - Instalar Node.js
 - Criar o servidor com Vite e instalar o tailwind, passo a passo:(https://tailwindcss.com/docs/installation/using-vite)
-- Substituir os arquivos da pasta "src" e "public" original pela pasta do projeto.
+- Substituir os arquivos da pasta principal do projeto, a pasta "src" e "public" original pela pasta do projeto.
 - Iniciar o servidor Vite (npm run dev).
