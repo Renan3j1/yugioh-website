@@ -1,0 +1,13 @@
+/* Estilos aplicados a toda a aplicação */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Container principal que divide a página em duas colunas */
+.container-principal {
+  display: flex;
+  gap: 20px; /* Espaço entre a coluna de filtros e a de conteúdo */
+  padding: 20px;
+}

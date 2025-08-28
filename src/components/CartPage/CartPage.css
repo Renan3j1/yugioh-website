@@ -1,0 +1,149 @@
+.cart-page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.cart-page-title {
+  font-size: 1.8em;
+  color: #ff9f43;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #28a745;
+  margin-bottom: 30px;
+}
+
+.cart-page-content {
+  display: flex;
+  gap: 30px;
+}
+
+.cart-items-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  gap: 15px;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-details h4 {
+  margin: 0 0 5px 0;
+}
+
+.cart-item-details p {
+  font-size: 0.8em;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.cart-item-details span {
+  font-size: 0.9em;
+}
+
+.cart-item-quantity input {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cart-item-total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 100px;
+}
+
+.cart-item-total span {
+  font-size: 0.8em;
+}
+
+.cart-item-total strong {
+  font-size: 1.2em;
+  color: #28a745;
+}
+
+.cart-item-remove {
+  background-color: #f0f0f0;
+  color: #888;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.cart-item-remove:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cart-summary-section {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.shipping-options,
+.purchase-summary {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.shipping-options h4,
+.purchase-summary h4 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.shipping-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-row.total {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 20px;
+}
+
+.summary-row.total span {
+  white-space: nowrap;
+}

@@ -1,0 +1,146 @@
+/* Container para o conteúdo da direita (banner + itens) */
+.conteudo-direita {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+/* Estilos do Banner Rotativo */
+.banner {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 250px;
+  background-color: #eee;
+}
+
+.slider {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bolinhas dos banners */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(123, 123, 123, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: green;
+}
+
+.store-controls {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.pagination-wrapper {
+  margin-left: auto;
+}
+
+.items-per-page-selector label {
+  margin-right: 8px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.items-per-page-selector select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+}
+
+/* Itens da Loja */
+.store-items {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  min-height: 500px;
+}
+
+/*  Estilo para a navegação de páginas  */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-arrow,
+.page-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.page-arrow {
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.page-arrow:hover {
+  background-color: #e0e0e0;
+}
+
+.page-number {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.page-number:hover {
+  background-color: #e0e0e0;
+}
+
+.page-number.active {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
